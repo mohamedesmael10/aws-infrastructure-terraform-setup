@@ -14,6 +14,5 @@ resource "null_resource" "generate_key_file" {
     command = "echo '${tls_private_key.private_key.private_key_pem}' > ~/.ssh/terraform.pem"
   }
 
-  # Ensure that the null_resource runs after the key pair is created
-  depends_on = [aws_key_pair.key_pair]
+    depends_on = [aws_key_pair.key_pair]
 }

@@ -16,14 +16,6 @@ resource "aws_s3_bucket_versioning" "terraform_state_bucket" {
 }
 
 
-#terraform {
-#  backend "s3" {
-#    encrypt = true    bucket = "hella-buckets"
-#    dynamodb_table = "terraform-state-lock-dynamo"
-#    key    = "terraform.tfstate"
-#    region = "us-east-1"
-#  }
-#}
 
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
   name = "terraform-state-lock-dynamo"
