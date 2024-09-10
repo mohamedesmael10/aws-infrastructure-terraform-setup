@@ -14,7 +14,7 @@ resource "aws_route_table" "public" {
 
 # Associate Public Subnet with Public Route Table
 resource "aws_route_table_association" "public" {
-  subnet_id      = aws_subnet.subnet_pp["public-subnet"].id
+  subnet_id      = aws_subnet.subnet["public-subnet"].id
   route_table_id = aws_route_table.public.id
   depends_on     = [aws_route_table.public]
 }
@@ -36,7 +36,7 @@ resource "aws_route_table" "private" {
 
 # Associate Private Subnet with Private Route Table
 resource "aws_route_table_association" "private" {
-  subnet_id      = aws_subnet.subnet_pp["private-subnet"].id
+  subnet_id      = aws_subnet.subnet["private-subnet"].id
   route_table_id = aws_route_table.private.id
   depends_on     = [aws_route_table.private]
 }

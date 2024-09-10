@@ -7,11 +7,6 @@ variable "vpc_cidr" {
   type        = string
 }
 
-variable "availability_zone" {
-  description = "The AWS availability zone for the subnets"
-  type        = string
-}
-
 variable "allow_ssh_from_cidr" {
   description = "CIDR block to allow SSH access"
   type        = string
