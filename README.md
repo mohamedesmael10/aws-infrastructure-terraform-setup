@@ -45,10 +45,10 @@ The goal of this lab is to create a basic network infrastructure on AWS using Te
 
 ### Setup Instructions
 1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/mohamedesmael10/aws-infrastructure-terraform-setup.git
+ ```bash
+git clone https://github.com/mohamedesmael10/aws-infrastructure-terraform-setup.git
    
-   cd aws-infrastructure-terraform-setup
+cd aws-infrastructure-terraform-setup
    ```
 2. Configure your Terraform backend by editing backend.tf with your S3 bucket and DynamoDB table details.
 
