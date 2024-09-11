@@ -7,27 +7,16 @@ ec2_ami = {
     associate_public_ip_address = true
     subnet_key                  = "public-subnet"
   }
-  public2 = {
-    ami                         = "ami-0e86e20dae9224db8"
-    instance_type               = "t2.micro"
-    instance_name               = "public2"
-    associate_public_ip_address = true
-    subnet_key                  = "public-subnet"
-  }
+ 
+  
   private1 = {
     ami                         = "ami-0e86e20dae9224db8"
     instance_type               = "t2.micro"
     instance_name               = "private1"
     associate_public_ip_address = false
     subnet_key                  = "private-subnet"
-  }
-  private2 = {
-    ami                         = "ami-0e86e20dae9224db8"
-    instance_type               = "t2.micro"
-    instance_name               = "private2"
-    associate_public_ip_address = false
-    subnet_key                  = "private-subnet"
-  }
+ 
+}
 }
 
 subnet_ec2 = {
